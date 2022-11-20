@@ -1,0 +1,14 @@
+<div
+    class="card m-3"
+    [ngClass]="{'CountryWithHighPopulation': population > 10000000, 'CountryWithLowPopulation' : population <= 10000000 }"
+    style="width: 18rem;">
+  <img [src]="imgsrc" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{region}}</p>
+    <!-- <input type="text" [value]="region"> -->
+    <!-- <input type="text" [(ngModel)]="region"> -->
+    <!-- <a *ngIf="region != 'Europe'" href="#" class="btn btn-primary" (click)="showPopulation()">Show Population Nbr.</a> -->
+    <a  class="btn btn-primary" (click)="showPopulation()">Show Population Nbr.</a>
+  </div>
+</div>

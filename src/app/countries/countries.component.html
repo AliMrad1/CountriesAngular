@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-3" *ngFor="let c of countries">
+      <country
+          [title]="c.name"
+          [region]="c.region"
+          [imgsrc]="c.imgsrc"
+          [population]="c.population"
+      ></country>
+  </div>
+</div>
+ 

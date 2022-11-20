@@ -1,0 +1,7 @@
+<nav>
+    <button routerLink="/c3">C3</button>
+    <button [routerLink]="[{ outlets: { 'sidebar': ['dashboard'] } }]">show dash</button>
+
+</nav>
+<router-outlet></router-outlet>
+<router-outlet name="sidebar"></router-outlet>
